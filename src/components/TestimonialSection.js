@@ -1,4 +1,9 @@
 import React from 'react'
+import Button from './global/Button';
+import img_reviewStar from '../assets/images/misc/star.png';
+import img_Ellipse1 from '../assets/images/Ellipse1.png';
+import img_Ellipse2 from '../assets/images/Ellipse2.png';
+import img_Ellipse3 from '../assets/images/Ellipse3.png';
 
 const TestimonialSection = () => {
   return (
@@ -10,14 +15,15 @@ const TestimonialSection = () => {
         </div>
         <div className="testimonial-boxes">
           <div className="testimonial-box">
-            <img src="images/misc/star.png" alt="" />
-            <img src="images/misc/star.png" alt="" />
-            <img src="images/misc/star.png" alt="" />
-            <img src="images/misc/star.png" alt="" />
-            <img src="images/misc/star.png" alt="" />
+            {/* generic av denna? loop eller switch? */}
+            <img src={img_reviewStar} alt="" />
+            <img src={img_reviewStar} alt="" />
+            <img src={img_reviewStar} alt="" />
+            <img src={img_reviewStar} alt="" />
+            <img src={img_reviewStar} alt="" />
             <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"</p>
             <div className="client">
-              <img src="images/Ellipse1.png" alt="Cassandra Warren, Business Manaer, Dorfus" />
+              <img src={img_Ellipse1} alt="Cassandra Warren, Business Manaer, Dorfus" />
               <div className="client-name">
                 <h4>Cassandra Warren</h4>
                 <p>Business Manaer, Dorfus</p>
@@ -26,40 +32,44 @@ const TestimonialSection = () => {
           </div>
 
                 {/* SKAPA GENERIC BOX */}
-                {/* <div className="testimonial-box">
-                    <img src="images/misc/star.png" alt="" />
-                    <img src="images/misc/star.png" alt="" />
-                    <img src="images/misc/star.png" alt="" />
-                    <img src="images/misc/star.png" alt="" />
-                    <img src="images/misc/star.png" alt="" />
+                <div className="testimonial-box">
+                    <img src={img_reviewStar} alt="" />
+                    <img src={img_reviewStar} alt="" />
+                    <img src={img_reviewStar} alt="" />
+                    <img src={img_reviewStar} alt="" />
+                    <img src={img_reviewStar} alt="" />
                     <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"</p>
                     <div className="client">
-                        <img src="images/Ellipse2.png" alt="Amanda Tulling, Senior Developer, Square" />
+                        <img src={img_Ellipse2} alt="Amanda Tulling, Senior Developer, Square" />
                         <div className="client-name">
                             <h4>Amanda Tulling</h4>
                             <p>Senior Developer, Square</p>
                         </div>
                     </div>
-                </div> */}
+                </div>
 
-                {/* <div className="testimonial-box">
-                    <img src="images/misc/star.png" alt="" />
-                    <img src="images/misc/star.png" alt="" />
-                    <img src="images/misc/star.png" alt="" />
-                    <img src="images/misc/star.png" alt="" />
-                    <img src="images/misc/star.png" alt="" />
+                <div className="testimonial-box">
+                    <img src={img_reviewStar} alt="" />
+                    <img src={img_reviewStar} alt="" />
+                    <img src={img_reviewStar} alt="" />
+                    <img src={img_reviewStar} alt="" />
+                    <img src={img_reviewStar} alt="" />
                     <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"</p>
                     <div className="client">
-                        <img src="images/Ellipse3.png" alt="Jack McDoggles, Key Account Manager, Gobona" />
+                        <img src={img_Ellipse3} alt="Jack McDoggles, Key Account Manager, Gobona" />
                         <div className="client-name">
                             <h4>Jack McDoggles</h4>
                             <p>Key Account Manager, Gobona</p>
                         </div>
                     </div>
-                </div> */}
+                </div>
             </div>
             <div className="testimonial-button">
-              <button className="btn-black">All Reviews <i className="fa-solid fa-arrow-right"></i></button>
+              <Button
+                type="black"
+                text="All Reviews"
+                url="/reviews"
+              />
             </div>
       </div>
     </section>

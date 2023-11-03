@@ -1,8 +1,10 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import img_womanWithLaptop from '../assets/images/thumbnails/woman-with-laptop.png';
 
 const AboutSection = () => {
   return (
-    <section classNameName="about-company-section">
+    <section className="about-company-section">
         <div className="container">
             <div className="about-section-left">
                 <div className="about-presentation-box">
@@ -13,8 +15,7 @@ const AboutSection = () => {
                     <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit."</p>
                 </div>
 
-                <img src="images/thumbnails/woman-with-laptop.png" 
-                 alt="smiling woman with laptop walking in a corridor" />
+                <img src={img_womanWithLaptop} alt="smiling woman with laptop walking in a corridor" />
 
             </div>
             <div className="about-section-right">
@@ -38,7 +39,7 @@ const AboutSection = () => {
 
                             <a href="#" id="intro-video-link">
                                 <button className="round-icon-transparent">
-                                    <i className="fa-solid fa-play"></i>
+                                    <FontAwesomeIcon icon="fa-solid fa-play" />
                                 </button>
                                 <p>Intro Video</p>
                             </a>  

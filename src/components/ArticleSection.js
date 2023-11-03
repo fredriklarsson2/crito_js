@@ -1,4 +1,9 @@
 import React from 'react'
+import Button from './global/Button';
+import img_articleSmall_1 from '../assets/images/thumbnails/article_small_1.png';
+import img_articleSmall_2 from '../assets/images/thumbnails/article_small_2.png';
+import img_articleSmall_3 from '../assets/images/thumbnails/article_small_3.png';
+
 
 const ArticleSection = () => {
   return (
@@ -8,12 +13,15 @@ const ArticleSection = () => {
                 <h6>Article & News</h6>
                 <div className="article-news-title">
                     <h2>Get Every Single Articles & News</h2>
-                    <button className="btn-transparent">Browse Articles <i className="fa-solid fa-arrow-right"></i></button>
+                    <Button 
+                        type="transparent"
+                        text="Browse Articles"
+                        url="/news"
+                    />
                 </div>
                 <div className="article-boxes">
                     <div className="article-box">
-                        <img src="images/thumbnails/article_small_1.png"
-                         alt="woman sitting down" />
+                        <img src={img_articleSmall_1} alt="woman sitting down" />
                         <div className="article-box-date">
                             <h3>25</h3>
                             <p>Mar</p>
@@ -23,8 +31,7 @@ const ArticleSection = () => {
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
                     </div>
                     <div className="article-box">
-                        <img src="images/thumbnails/article_small_2.png"
-                         alt="text on computer screen" />
+                        <img src={img_articleSmall_2} alt="text on computer screen" />
                         <div className="article-box-date">
                             <h3>17</h3>
                             <p>Mar</p>
@@ -34,8 +41,7 @@ const ArticleSection = () => {
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>                        
                     </div>
                     <div className="article-box">
-                        <img src="images/thumbnails/article_small_3.png"
-                         alt="books" />
+                        <img src={img_articleSmall_3} alt="books" />
                         <div className="article-box-date">
                             <h3>13</h3>
                             <p>Mar</p>

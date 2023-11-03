@@ -1,35 +1,45 @@
 import React from 'react';
-import NavSection from './NavSection'; 
+import { NavLink, Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import img_logotype from '../assets/images/logotype.svg';
+import Button from '../components/global/Button';
 
 const Header = () => {
   return (
     <header>
       <div className="container">
-        <a href="index.html"><img src="images/logotype.svg" alt="Crito logotype" /></a>
-        <button className="menu-bars "><i className="fa-solid fa-bars"></i></button>
+        <Link to="/"><img src={img_logotype} alt="Crito logotype" /></Link>
+        <button className="menu-bars ">
+          <i className="fa-solid fa-bars"></i>
+        </button>
         <div className="menu">
           <div className="top-menu">
             <div className="contact-information">
               <div className="content-box">
-                <i className="fa-solid fa-phone"></i> +46 (8) 121 470 50
+                <FontAwesomeIcon icon="fa-solid fa-phone" /> +46 (8) 121 470 50
               </div>
               <div className="content-box">
-                <i className="fa-solid fa-envelope"></i> info@crito.com
+                <FontAwesomeIcon icon="fa-solid fa-envelope" /> info@crito.com
               </div>
               <div className="content-box last">
-                <i className="fa-solid fa-location-dot"></i> Sveavägen 31, 111 34 Stockholm
+              <FontAwesomeIcon icon="fa-solid fa-location-dot" /> Sveavägen 31, 111 34 Stockholm
               </div>
             </div>
             <div className="social-media">
-              <a href="#" target="_blank"><i className="fa-brands fa-facebook"></i></a>
-              <a href="#" target="_blank"><i className="fa-brands fa-twitter"></i></a>
-              <a href="#" target="_blank"><i className="fa-brands fa-instagram"></i></a>
-              <a href="#" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
+              <Link to="https://www.facebook.com" target="_blank"><FontAwesomeIcon icon="fa-brands fa-square-facebook" /></Link>
+              <Link to="https://www.x.com" target="_blank"><FontAwesomeIcon icon="fa-brands fa-square-x-twitter" /></Link>
+              <Link to="https://www.instagram.com" target="_blank"><FontAwesomeIcon icon="fa-brands fa-square-instagram" /></Link>
+              <Link to="https://www.linkedin.com" target="_blank"><FontAwesomeIcon icon="fa-brands fa-linkedin" /></Link>
             </div>
           </div>
           <div className="main-menu">
-            <NavSection />
-            <a className="btn-yellow btn-login" href="#">Login <i className="fa-solid fa-arrow-right-to-bracket"></i></a>
+            <nav>
+              <NavLink to="/">Home</NavLink>
+              <NavLink to="/service">Service</NavLink>
+              <NavLink to="/news">News</NavLink>
+              <NavLink to="/contact">Contact</NavLink>
+            </nav>
+            <Button type="yellow" text="Login" url="/"></Button>
           </div>
         </div>
       </div>

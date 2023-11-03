@@ -1,4 +1,6 @@
 import React from 'react'
+import Button from '../components/global/Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const FeaturesSection = () => {
   return (
@@ -7,33 +9,38 @@ const FeaturesSection = () => {
             <div className="section-title">
                 <h6>Features</h6>
                 <h2>Our Accounting is trusted by thousand of companies</h2>
-                <button className="btn-yellow" href="#">All Recent Projects <i className="fa solid fa-arrow-right"></i></button>
+                <Button 
+                    type="yellow" 
+                    text="All Recent Projects" 
+                    url="/projects" 
+                    // fullWidth={true}
+                />
             </div>
             <div className="features-grid">
                 <div className="feature-box">
                     <div className="feature-box-title">
-                        <i className="fa-regular fa-handshake"></i>
+                        <FontAwesomeIcon icon="fa-solid fa-handshake-simple" />
                         <h4>Business Advice</h4>
                     </div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div className="feature-box">
                     <div className="feature-box-title">
-                        <i className="fa-regular fa-lightbulb"></i>
+                        <FontAwesomeIcon icon="fa-solid fa-lightbulb" />
                         <h4>Startup Advice</h4>
                     </div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div className="feature-box">
                     <div className="feature-box-title">
-                        <i className="fa-solid fa-chart-line"></i>
+                        <FontAwesomeIcon icon="fa-solid fa-chart-line" />
                         <h4>Financial Advice</h4>
                     </div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div className="feature-box">
                     <div className="feature-box-title">
-                        <i className="fa-solid fa-cube"></i>
+                        <FontAwesomeIcon icon="fa-solid fa-cube" />
                         <h4>Risk Management</h4>
                     </div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>

@@ -1,13 +1,15 @@
 import React from 'react'
+import img_bgWhiteLines_right from '../assets/images/background-lines-white-right.svg';
+import img_logotype_white from '../assets/images/logotype-white.svg';
 
 const Footer = () => {
   return (
     <footer>
         <div className="container">
-            <img className="background-lines-white-right" src="images/background-lines-white-right.svg" />
+            <img className="background-lines-white-right" src={img_bgWhiteLines_right} />
             <div className="top-footer">
                 <div className="footer-logo">
-                    <img src="images/logotype-white.svg" alt="Crito logotype" />
+                    <img src={img_logotype_white} alt="Crito logotype" />
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat obcaecati voluptas voluptates! Voluptates laborum nam ratione minus necessitatibus, iure praesentium.
                     </p>
                 </div>

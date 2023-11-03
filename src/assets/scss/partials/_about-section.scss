@@ -1,0 +1,120 @@
+.about-company-section {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 100px;
+
+        .about-section-left {
+            position: relative;
+
+            .about-presentation-box {
+                position: absolute;
+                margin-left: -50px;
+                margin-top: 400px;
+                padding: 40px;
+                background-color: #BEEBFF;
+                filter: drop-shadow(0px 18px 20px rgba(44,44,44,0.15 ));
+
+                .about-presentation-title {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: baseline;
+                    padding-bottom: 10px;
+
+                    .h4-name {
+                        font-family: "DM Sans";
+                        font-size: 20px;
+                        font-weight: bold;                    
+                        color: #191919;
+                    }
+    
+                    .h4-title {
+                        padding-left: 10px;
+                        font-family: "DM Sans";
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: #f94d1c;
+                    }                    
+                }
+
+                p {
+                    font-family: "Inter";
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 26px;
+                    font-style: italic;
+                    color: #191919;
+                }            
+            }
+        }
+
+        .about-section-right {
+            display: block;
+            margin-top: 0;
+            margin-left: 200px;
+
+            .section-title {
+                padding-top: 0;
+
+                h2 {
+                    margin-bottom: 25px;
+                }
+
+                .about-section-text {
+                    p {
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                    }
+
+                    .about-section-links {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        margin-top: 65px;
+
+                        .round-icon-transparent {
+                            padding: 0;
+                            border: 3px solid rgba(25,25,25,0.1);
+                            
+                            i {
+                                font-size: 1em;
+                            }
+                        }
+
+                        #intro-video-link {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            margin-left: 40px;
+                            text-decoration: none;
+                            color: #191919;
+
+                            p {
+                                padding-left: 15px;
+                                padding-top: 25px;
+                            }
+
+                            &:hover {
+                                p {
+                                    color: #f94d1c;
+                                    transition: 0.2s ease-in-out;
+                                }
+
+                                .round-icon-transparent {
+                                    border: 3px solid #f94d1c;
+                                    transition: 0.3s ease-in-out;
+                                    
+                                    i {
+                                        color: #f94d1c;
+                                        transition: 0.2s ease-in-out;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

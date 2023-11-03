@@ -1,0 +1,26 @@
+.section-title {
+    text-align: left;
+    padding-top: 70px;
+    padding-bottom: 40px;
+
+    h2 {
+        color: #191919;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        font-size: 32px;
+    }
+
+    h6 {
+        color: #F94D1C;
+        margin-bottom: 10px;
+    }
+
+    @media (min-width: 768px) {
+        padding-top: 120px;
+        padding-bottom: 90px;
+
+        h2 {
+            font-size: 45px;
+        }
+    }
+}

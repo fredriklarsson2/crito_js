@@ -1,0 +1,48 @@
+.round-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #191919;
+    color: #FFFFFF;
+    border-radius: 100%;
+
+    @media(min-width: 786px) {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.round-icon-white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #FFFFFF;
+    color: #191919;
+    border-radius: 100%;
+
+    @media(min-width: 786px) {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.round-icon-transparent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: #FFFFFF;
+    color: #191919;
+    border: 1px solid rgba(25,25,25,0.1);
+    border-radius: 100%;
+    padding: 35px;
+    
+    i {
+        font-size: 2em;
+    }
+}

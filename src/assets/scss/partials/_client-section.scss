@@ -1,0 +1,41 @@
+.client-section {
+    display: none;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    @media (min-width: 768px) {
+        display: flex;
+
+        img {
+            max-width: 25%;
+            height: auto;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 15px;
+            padding-bottom: 15px;            
+        }
+    }
+
+    @media (min-width: 1200px) {
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 75px;
+            padding-bottom: 75px;            
+        }
+    }
+}

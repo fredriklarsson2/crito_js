@@ -1,55 +1,56 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import img_chooseSection from '../assets/images/choose-section-small.png';
 
 const ChooseSection = () => {
   return (
-    <section className="why-choose-us-section">
+    <section className="choose-section">
         <div className="container">
-            <div className="why-choose-us-section-left">
+            <div className="choose-section-left">
                 <div className="section-title">
                     <h6>Why Choose Us</h6>
                     <h2>Why We Are The Best Business Consulting Agency</h2>
                 </div>
-                <div className="why-choose-us-boxes">
+                <div className="choose-section-boxes">
                     <div className="round-icon-transparent">
-                        <i className="fa-solid fa-thumbs-up"></i>
+                        <FontAwesomeIcon icon="fa-solid fa-thumbs-up" />
                     </div>
-                    <div className="why-choose-us-box">
+                    <div className="choose-section-box">
                         <h4>Process Excellence</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur.</p>
                     </div>
                 </div>
-                <div className="why-choose-us-boxes">
+                <div className="choose-section-boxes">
                     <div className="round-icon-transparent">
-                        <i className="fa-solid fa-gem"></i>
+                        <FontAwesomeIcon icon="fa-solid fa-gem" />
                     </div>
-                    <div className="why-choose-us-box">
+                    <div className="choose-section-box">
                         <h4>Strategic Planning</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur.</p>
                     </div>
                 </div>
-                <div className="why-choose-us-boxes">
+                <div className="choose-section-boxes">
                     <div className="round-icon-transparent">
-                        <i className="fa-solid fa-pen-nib"></i>
+                        <FontAwesomeIcon icon="fa-solid fa-pen-nib" />
                     </div>
-                    <div className="why-choose-us-box">
+                    <div className="choose-section-box">
                         <h4>Experience Design</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur.</p>
                     </div>
                 </div>
-                <div className="why-choose-us-boxes">
+                <div className="choose-section-boxes">
                     <div className="round-icon-transparent">
-                        <i className="fa-solid fa-user-gear"></i>
+                        <FontAwesomeIcon icon="fa-solid fa-user-gear" />
                     </div>
-                    <div className="why-choose-us-box">
+                    <div className="choose-section-box">
                         <h4>Artificial Intelligence</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur.</p>
                     </div>
                 </div>
             </div>
-            <div className="why-choose-us-section-right">
-                <img src="images/why-choose-us-small.png"
-                 alt="bild" />
-                <div className="why-choose-us-beige-bg"></div>
+            <div className="choose-section-right">
+                <img src={img_chooseSection} alt="two business women talking in front of a brick wall" />
+                <div className="choose-section-beige-bg"></div>
             </div>
         </div>
     </section>

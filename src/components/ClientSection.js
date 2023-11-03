@@ -1,14 +1,19 @@
 import React from 'react'
+import img_paperz from '../assets/images/paperz.svg';
+import img_dorfus from '../assets/images/dorfus.svg';
+import img_martino from '../assets/images/martino.svg';
+import img_square from '../assets/images/square.svg';
+import img_gobona from '../assets/images/gobona.svg';
 
 const ClientSection = () => {
   return (
     <section className="client-section">
         <div className="container">
-            <img src="images/paperz.svg"  alt="paperz logotype"   />
-            <img src="images/dorfus.svg"  alt="dorfus logotype"   />
-            <img src="images/martino.svg" alt="martino logotype"  />
-            <img src="images/square.svg"  alt="square logotype"   />
-            <img src="images/gobona.svg"  alt="gobona logotype"   />
+            <img src={img_paperz} alt="paperz logotype" />
+            <img src={img_dorfus} alt="dorfus logotype" />
+            <img src={img_martino} alt="martino logotype" />
+            <img src={img_square} alt="square logotype" />
+            <img src={img_gobona} alt="gobona logotype" />
         </div>
     </section>
   )

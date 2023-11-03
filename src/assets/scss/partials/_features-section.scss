@@ -1,0 +1,82 @@
+.features-section {
+    
+    .container {
+
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: flex-start;
+            border-color: rgba(25,25,25,0.2 );
+            border-width: 1.2000000476837158px;
+            border-style: solid;
+            border-radius: 2px;
+        }
+
+        .section-title {
+            // padding: 25px;
+            border: 1px solid black;
+
+            @media (min-width: 768px) {
+                // margin-top: 50px;
+                // margin-left: 75px;
+
+                h2 {
+                    padding-bottom: 50px;
+                }
+            }
+        
+            .btn-yellow {
+                margin-top: 40px;
+                width: 100%;
+            }
+        }
+        
+        .features-grid {
+
+            @media (min-width: 768px) {
+                display: grid;
+                align-items: center;
+                gap: 100px;
+                padding: 100px;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .feature-box {
+                padding: 25px;
+
+                @media (min-width: 768px) {
+                    padding: 0;
+                }
+
+                .feature-box-title {
+                    display: flex;
+                    text-align: center;
+
+                    i {
+                        margin-top: 5px;
+                        margin-right: 15px;
+                    }
+
+                    @media (min-width: 768px) {
+                        display: block;
+                        text-align: left;
+
+                        i {
+                            // padding-bottom: 25px;
+                            margin-top: 0;
+                            margin-right: 0;
+                            font-size: 2em;
+                        }
+
+                        h4 {
+                            padding-top: 25px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .btn-yellow {
+            width: 100%;
+        }
+    }
+}

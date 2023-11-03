@@ -1,0 +1,105 @@
+footer {
+    background-color: #0E1021;
+    padding-top: 120px;
+    position: relative;
+
+    p {
+        line-height: 26px;
+        color: rgba(255,255,255,0.7 );
+    }
+
+    .container {
+        .background-lines-white-right {
+            position: absolute;
+            bottom: 100px;
+            right: 0;
+            
+            @media(max-width: 1400px) {
+                display: none;
+            }
+        }
+        
+        .top-footer {
+            display: flex;
+            align-items: left;
+            padding-bottom: 100px;
+            gap: 100px;
+
+            .footer-logo {
+                width: 311px;
+    
+                p {
+                    padding-top: 30px;
+                }
+            }
+    
+            .footer-links {
+                h5 {
+                    padding-top: 20px;
+                    padding-bottom: 30px;
+                    color: #ffffff;
+                }
+    
+                a {
+                    display: block;
+                    text-decoration: none;
+                    font-family: "Inter";
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 40px;
+                    font-style: normal;
+                    text-align: left;
+                    color: rgba(255,255,255,0.7 );
+                }
+    
+                a:hover {
+                    text-decoration: underline;
+                    color: rgba(196, 196, 196, 0.7);
+                }
+            }
+        }
+
+        .bottom-footer {
+            display: block;
+            padding: 30px;
+
+            @media (min-width: 768px) {
+                display: flex;
+                justify-content: space-between;
+                padding: 0;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+            
+
+            .copyright {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                @media (max-width: 768px) {
+                    display: block;
+                    justify-content: left;
+                    align-items: left;
+                }
+            }
+
+            .social-media {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 15px;
+
+                a {
+                    color: white;
+                    font-size: 1.3rem;
+                    margin-left: 10px;
+
+                    &:hover {
+                        color: #999999
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,134 @@
+@import './partials/about-section';
+@import './partials/article-section';
+@import './partials/buttons';
+@import './partials/choose-section';
+@import './partials/client-section';
+@import './partials/contact-information';
+@import './partials/features-section';
+@import './partials/footer';
+@import './partials/form-section';
+@import './partials/header';
+@import './partials/newsletter-section';
+@import './partials/projects-section';
+@import './partials/round-icons';
+@import './partials/section-title';
+@import './partials/services-section';
+@import './partials/showcase';
+@import './partials/team-section';
+@import './partials/testimonial-section';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&display=swap');
+
+html, body {
+    color: #191919;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    h1 {
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        color: #191919;
+
+        @media (min-width: 768px) {
+            font-size: 70px;
+        }
+
+        @media (min-width: 1400px) {
+            font-size: 86px;
+        }
+    }
+
+    .lesser-h1 {
+        font-size: 42px;
+
+        @media (min-width: 768px) {
+            font-size: 49px;
+        }
+
+        @media (min-width: 1200px) {
+            font-size: 56px;
+        }
+    }
+
+    h3 {
+        font-family: "DM Sans";
+        font-size: 22px;
+        font-weight: bold;
+        font-style: normal;
+        color: #191919;
+    }
+
+    h4 {
+        font-family: "DM Sans";
+        font-size: 22px;
+        font-weight: bold;
+        color: #191919;
+    }
+
+    h5 {
+        font-family: "DM Sans";
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 33px;
+        font-style: normal;
+        text-align: left;
+        color: #191919;
+    }
+
+    h6 {
+        font-family: "Inter";
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        color: #6a6c71;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-family: "Inter";
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        line-height: 32px;
+        color: rgba(25,25,25,0.7 );
+    }
+}
+
+.container {
+    max-width: 1520px;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    border-top: 1px solid rgba(255,255,255,0.2 );
+}
+
+.map-image {
+    display: block;
+    padding-top: 100px;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.news {
+    min-height: 100vh;
+    display: flex;
+    margin-top: 100px;
+}
+
+.page-not-found {
+    min-height: 100vh;
+    display: flex;
+    margin-top: 100px;
+  }
