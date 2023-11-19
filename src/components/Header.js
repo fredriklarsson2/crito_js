@@ -16,9 +16,6 @@ const Header = () => {
         <header>
           <div className="container">
             <Link to="/"><img src={img_logotype} alt="Crito logotype" /></Link>
-            {/* <button className="btn-menu">
-              <FontAwesomeIcon icon="fa-solid fa-bars" />
-            </button> */}
 
             <button onClick={() => setMenuOpen(!menuOpen)} className="mobile-btn-menu">
               {menuOpen ? (<FontAwesomeIcon icon="fa-solid fa-xmark" className="x-mark" />) : (<FontAwesomeIcon icon="fa-solid fa-bars" />)}
@@ -55,10 +52,6 @@ const Header = () => {
               </div>
             </div>
           </div>
-
-            
-
-
 
         </header>
       </>

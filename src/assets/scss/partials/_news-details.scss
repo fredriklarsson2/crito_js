@@ -34,7 +34,12 @@
 
             .content-main {
                     display: flex;
+                    flex-direction: column;
                     justify-content: space-between;
+
+                    @media (min-width: 992px) {
+                        flex-direction: row;
+                    }
 
                 .content-article {
 
@@ -53,17 +58,90 @@
                 .content-side {
                     margin-top: 0;
                     padding-top: 0;
+                    width: 420px;
+
+                    .search-field-container {
+                        position: relative;
+
+                        .search-icon {
+                            position: absolute;
+                            left: 25px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+
+                        .search-field {
+                            display: block;
+                            display: block;
+                            width: 100%;
+                            padding: 8px;
+                            background-color: #FFFFFF;
+                            border: 1px solid rgba(25, 25, 25, 0.10);
+                            padding-top: 15px;
+                            padding-bottom: 15px;
+                            padding-left: 50px;
+                            padding-right: 25px;
+                            font-weight: 600;
+                            font-size: 16px;
+                            border-radius: 40px;
+                            transition: border-color 0.3s;
+                            font-family: 'Inter', sans-serif;
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: #191919;
+                            margin-bottom: 45px;
+                            
+                            &:hover {
+                                border-color: RGBA(25,25,25,0.5 );
+                            }
+    
+                            &::placeholder {
+                                color: RGBA(25,25,25,0.5 );
+                            }
+    
+                            &:focus {
+                                outline: none;
+                                box-shadow: 0 0 0 2px #F9D783; /* added box-shadow for focus */
+                            }
+    
+                            &:hover {
+                                border-color: RGBA(25,25,25,0.5 );
+                            }
+    
+                            &::p            laceholder {
+                                color: RGBA(25,25,25,0.5 );
+                            }
+    
+                            &:focus {
+                                outline: none;
+                                box-shadow: 0 0 0 2px #F9D783; /* added box-shadow for focus */
+                            }
+                        }
+                    }
 
                     .recent-posts {
                         border: 1px solid RGBA(25,25,25,0.2 );
                         padding: 25px;
+
+                        h3 {
+                            margin-bottom: 20px;
+                        }
+
+                        hr {
+                            margin-bottom: 20px;
+                        }
                         
                     }
 
                     .categories {
                         border: 1px solid RGBA(25,25,25,0.2 );
-                        margin-top: 40px;
+                        margin-top: 45px;
+                        margin-bottom: 100px;
                         padding: 25px;
+
+                        h3 {
+                            margin-bottom: 20px;
+                        }
                     }
                 }
 

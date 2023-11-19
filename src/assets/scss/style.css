@@ -9,6 +9,7 @@
 @media (min-width: 1200px) {
   .about-company-section .container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     padding: 100px;
@@ -417,7 +418,6 @@
   }
 }
 
-/* _confirmation-page.scss */
 .modal-container {
   max-width: 400px;
   margin: auto;
@@ -1004,7 +1004,13 @@ header .container .menu .main-menu .btn-login {
 }
 .news-details-section .container .content .content-main {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+}
+@media (min-width: 992px) {
+  .news-details-section .container .content .content-main {
+    flex-direction: row;
+  }
 }
 .news-details-section .container .content .content-main .content-article img {
   width: 700px;
@@ -1017,15 +1023,79 @@ header .container .menu .main-menu .btn-login {
 .news-details-section .container .content .content-main .content-side {
   margin-top: 0;
   padding-top: 0;
+  width: 420px;
+}
+.news-details-section .container .content .content-main .content-side .search-field-container {
+  position: relative;
+}
+.news-details-section .container .content .content-main .content-side .search-field-container .search-icon {
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.news-details-section .container .content .content-main .content-side .search-field-container .search-field {
+  display: block;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(25, 25, 25, 0.1);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 50px;
+  padding-right: 25px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 40px;
+  transition: border-color 0.3s;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #191919;
+  margin-bottom: 45px;
+}
+.news-details-section .container .content .content-main .content-side .search-field-container .search-field:hover {
+  border-color: RGBA(25, 25, 25, 0.5);
+}
+.news-details-section .container .content .content-main .content-side .search-field-container .search-field::-moz-placeholder {
+  color: RGBA(25, 25, 25, 0.5);
+}
+.news-details-section .container .content .content-main .content-side .search-field-container .search-field::placeholder {
+  color: RGBA(25, 25, 25, 0.5);
+}
+.news-details-section .container .content .content-main .content-side .search-field-container .search-field:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #F9D783; /* added box-shadow for focus */
+}
+.news-details-section .container .content .content-main .content-side .search-field-container .search-field:hover {
+  border-color: RGBA(25, 25, 25, 0.5);
+}
+.news-details-section .container .content .content-main .content-side .search-field-container .search-field::p laceholder {
+  color: RGBA(25, 25, 25, 0.5);
+}
+.news-details-section .container .content .content-main .content-side .search-field-container .search-field:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #F9D783; /* added box-shadow for focus */
 }
 .news-details-section .container .content .content-main .content-side .recent-posts {
   border: 1px solid RGBA(25, 25, 25, 0.2);
   padding: 25px;
 }
+.news-details-section .container .content .content-main .content-side .recent-posts h3 {
+  margin-bottom: 20px;
+}
+.news-details-section .container .content .content-main .content-side .recent-posts hr {
+  margin-bottom: 20px;
+}
 .news-details-section .container .content .content-main .content-side .categories {
   border: 1px solid RGBA(25, 25, 25, 0.2);
-  margin-top: 40px;
+  margin-top: 45px;
+  margin-bottom: 100px;
   padding: 25px;
+}
+.news-details-section .container .content .content-main .content-side .categories h3 {
+  margin-bottom: 20px;
 }
 
 .newsletter {
@@ -1047,7 +1117,7 @@ header .container .menu .main-menu .btn-login {
 .newsletter .container {
   display: block;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .newsletter .container {
     display: flex;
     justify-content: space-between;
@@ -1061,7 +1131,7 @@ header .container .menu .main-menu .btn-login {
   font-size: 30px;
   margin-bottom: 40px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .newsletter .container h2 {
     text-align: left;
     font-size: 45px;
@@ -1071,7 +1141,7 @@ header .container .menu .main-menu .btn-login {
 .newsletter .container form {
   text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .newsletter .container form {
     text-align: left;
   }

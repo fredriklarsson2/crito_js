@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Modal from 'react-modal';
-import Button from '../components/global/Button'
 
-Modal.setAppElement('#root'); // Detta är för att undvika tillgänglighetsvarningar
+Modal.setAppElement('#root');
 
 const ConfirmationPage = () => {
   const [countdown, setCountdown] = useState(5);
@@ -13,7 +12,7 @@ const ConfirmationPage = () => {
       if (countdown > 0) {
         setCountdown(countdown - 1);
       } else {
-        setModalIsOpen(false); // Stäng modalfönstret när nedräkningen är klar
+        setModalIsOpen(false);
       }
     }, 1000);
 
@@ -28,8 +27,8 @@ const ConfirmationPage = () => {
     <Modal
       isOpen={modalIsOpen}
       onRequestClose={closeModal}
-      className="modal-container" // Apply the SCSS class
-      overlayClassName="overlay" // Apply the SCSS class
+      className="modal-container"
+      overlayClassName="overlay"
       contentLabel="Form Submission Confirmation"
     >
       <div className="container mt-5">

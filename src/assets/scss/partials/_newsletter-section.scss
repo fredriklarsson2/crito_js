@@ -17,7 +17,7 @@
     .container {
         display: block;
         
-        @media(min-width: 768px) {
+        @media(min-width: 1200px) {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -30,7 +30,7 @@
             font-size: 30px;
             margin-bottom: 40px;
 
-            @media(min-width: 768px) {
+            @media(min-width: 1200px) {
                 text-align: left;
                 font-size: 45px;
                 margin-bottom: auto;
@@ -40,7 +40,7 @@
         form {
             text-align: center;
 
-            @media (min-width: 768px) {
+            @media (min-width: 1200px) {
                 text-align: left;
             }
 

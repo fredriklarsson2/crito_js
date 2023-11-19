@@ -1,7 +1,3 @@
-/* _confirmation-page.scss */
-
-// _confirmation-page.scss
-
 .modal-container {
     max-width: 400px;
     margin: auto;
@@ -12,7 +8,7 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); // Centrera horisontellt och vertikalt
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     align-items: center;
