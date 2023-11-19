@@ -3,11 +3,14 @@
 @import './partials/buttons';
 @import './partials/choose-section';
 @import './partials/client-section';
+@import './partials//confirmation-page';
+@import './partials/contact-form-section';
 @import './partials/contact-information';
 @import './partials/features-section';
 @import './partials/footer';
-@import './partials/form-section';
 @import './partials/header';
+@import './partials/menu';
+@import './partials/news-details';
 @import './partials/newsletter-section';
 @import './partials/projects-section';
 @import './partials/round-icons';
@@ -32,7 +35,7 @@ html, body {
         color: #191919;
 
         @media (min-width: 768px) {
-            font-size: 70px;
+            font-size: 60px;
         }
 
         @media (min-width: 1400px) {
@@ -62,7 +65,7 @@ html, body {
 
     h4 {
         font-family: "DM Sans";
-        font-size: 22px;
+        font-size: 18px;
         font-weight: bold;
         color: #191919;
     }
@@ -98,7 +101,7 @@ html, body {
 }
 
 .container {
-    max-width: 1520px;
+    max-width: 1400px;
 }
 
 .center-content {
@@ -107,16 +110,14 @@ html, body {
     align-items: center;
 }
 
-.line {
-    border-top: 1px solid rgba(255,255,255,0.2 );
-}
-
 .map-image {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 100px;
 
     img {
-        width: 100%;
+        max-width: 100%;
         height: auto;
     }
 }
@@ -129,6 +130,24 @@ html, body {
 
 .page-not-found {
     min-height: 100vh;
-    display: flex;
-    margin-top: 100px;
-  }
+    display: block;
+    text-align: center;
+
+    a {
+        color: #191919;
+        text-decoration: underline;
+    }
+
+    .page-not-found-icon {
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+}
+
+.icon-size-medium {
+    font-size: 28px;
+}
+
+.icon-size-big {
+    font-size: 100px;
+}

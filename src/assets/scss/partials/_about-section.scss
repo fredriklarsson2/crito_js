@@ -1,20 +1,32 @@
 .about-company-section {
     .container {
         display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding: 100px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
+        @media (min-width: 1200px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 100px;
+        }
+        
         .about-section-left {
             position: relative;
 
             .about-presentation-box {
-                position: absolute;
-                margin-left: -50px;
-                margin-top: 400px;
-                padding: 40px;
-                background-color: #BEEBFF;
-                filter: drop-shadow(0px 18px 20px rgba(44,44,44,0.15 ));
+                display: none;
+
+                @media (min-width: 768px) {
+                    display: block;
+                    position: absolute;
+                    margin-left: -50px;
+                    margin-top: 400px;
+                    padding: 40px;
+                    background-color: #BEEBFF;
+                    filter: drop-shadow(0px 18px 20px rgba(44,44,44,0.15 ));
+                }
 
                 .about-presentation-title {
                     display: flex;
@@ -47,15 +59,33 @@
                     color: #191919;
                 }            
             }
+
+            img {
+                width: 100%;
+
+                @media (min-width: 768px) {
+                    width: auto;
+                }
+            }
         }
 
         .about-section-right {
             display: block;
             margin-top: 0;
-            margin-left: 200px;
+            
+
+            @media (min-width: 1200px) {
+                margin-left: 200px;
+            }
+            
 
             .section-title {
                 padding-top: 0;
+                text-align: center;
+
+                @media (min-width: 1200px) {
+                    text-align: left;
+                }
 
                 h2 {
                     margin-bottom: 25px;
@@ -65,13 +95,18 @@
                     p {
                         padding-top: 10px;
                         padding-bottom: 10px;
+                        text-align: left;
                     }
 
                     .about-section-links {
                         display: flex;
-                        justify-content: flex-start;
+                        justify-content: center;
                         align-items: center;
-                        margin-top: 65px;
+                        
+                        @media (min-width: 1200px) {
+                            justify-content: flex-start;
+                            margin-top: 65px;
+                        }
 
                         .round-icon-transparent {
                             padding: 0;

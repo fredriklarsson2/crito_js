@@ -1,34 +1,33 @@
 import React from 'react'
+import ContactBox from '../components/boxes/ContactBox'
 
 const ContactInformation = () => {
   return (
     <section>
         <div className="container">
             <div className="contact-information-boxes">
-                <div className="contact-box">
-                    <div className="round-icon"><i className="fa-solid fa-location-dot"></i></div>
-                    <div className="contact-box-text">
-                        <h4>Visit us</h4>
-                        <p>Sveavägen 31</p>
-                        <p>111 34 STOCKHOLM</p>
-                    </div>
-                </div>
-                <div className="contact-box">
-                    <div className="round-icon"><i className="fa-solid fa-phone"></i></div>
-                    <div className="contact-box-text">
-                        <h4>Call us</h4>
-                        <p>+46 (8) 121 470 50</p>
-                        <p>+46 (8) 121 470 51</p>
-                    </div>
-                </div>
-                <div className="contact-box">
-                    <div className="round-icon"><i className="fa-solid fa-envelope"></i></div>
-                    <div className="contact-box-text">
-                        <h4>Email us</h4>
-                        <p>info@crito.com</p>
-                        <p>support@crito.com</p>
-                    </div>
-                </div>
+
+                <ContactBox 
+                    title="Vist us"
+                    p1="Sveavägen 31"
+                    p2="111 34 STOCKHOLM"
+                    icon="faLocationDot"
+                />
+
+                <ContactBox 
+                    title="Call us"
+                    p1="+46 (8) 121 470 50"
+                    p2="+46 (8) 121 470 51"
+                    icon="faPhone"
+                />
+
+                <ContactBox 
+                    title="Email us"
+                    p1="info@crito.com"
+                    p2="support@crito.com"
+                    icon="faEnvelope"
+                />
+                
             </div>
         </div>
     </section>

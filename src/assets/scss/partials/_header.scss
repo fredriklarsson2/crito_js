@@ -8,10 +8,11 @@ header {
         justify-content: space-between;
         gap: 70px;
         
-        .menu-bars {
-            font-size: 25px;
+        .btn-menu {
             border: none;
             background-color: transparent;
+            color: #191919;
+            font-size: 1.5em;
 
             @media (min-width: 992px) {
                 display: none;
@@ -66,7 +67,12 @@ header {
                 }
 
                 .social-media {
-                    Link {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 15px;
+
+                    a {
                         color: #191919;
                         font-size: 1.3rem;
                         margin-left: 10px;

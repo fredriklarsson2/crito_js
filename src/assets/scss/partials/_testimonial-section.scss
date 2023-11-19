@@ -4,37 +4,64 @@
 
     .container {
         background-color: #FFFFFF;
-        max-width: 1520px;
 
+        @media (min-width: 768px) {
+            max-width: 1520px;
+            margin: auto;
+        }
+        
         .section-title {
             text-align: center;
         }
 
         .testimonial-boxes {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 50px;
-            padding: 100px;
+            padding: 50px;
             padding-top: 0;
 
+            @media (min-width: 1200px) {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 50px;
+                padding: 100px;
+                
+            }
+            
             .testimonial-box {
                 p {
-                    font-size: 18px;
+                    font-size: 14px;
                     font-weight: normal;
                     font-style: italic;
-                    line-height: 34px;
+                    line-height: 30px;
                     padding-top: 25px;
                     padding-bottom: 25px;
+                }
+
+                @media (min-width: 1200px) {
+                    p {
+                        font-weight: normal;
+                        font-style: italic;
+                        line-height: 34px;
+                    }
                 }
 
                 .client {
                     display: flex;
                     justify-content: flex-start;
+                    margin-bottom: 50px;
+
+                    @media (min-width: 768px) {
+                        margin-bottom: auto;
+                    }
+                    
 
                     img {
-                        height: 100px;
+                        height: 75px;
                         width: auto;
+
+                        @media (min-width: 768px) {
+                            height: 100px;
+                        }
                     }
 
                     .client-name {

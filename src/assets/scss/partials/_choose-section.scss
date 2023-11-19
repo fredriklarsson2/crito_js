@@ -2,11 +2,33 @@
     .container {
         display: flex;
 
+        @media (max-width: 1200px) {
+            justify-content: center;
+        }
+
         .choose-section-left {
             width: 600px;
 
             .section-title {
                 padding-bottom: 40px;
+
+                h6 {
+                    text-align: center;
+                }
+
+                h2 {
+                    text-align: center;
+                }
+
+                @media (min-width: 1200px) {
+                    h6 {
+                        text-align: left;
+                    }
+    
+                    h2 {
+                        text-align: left;
+                    }
+                }
             }
             
             .choose-section-boxes {
@@ -39,19 +61,28 @@
             position: relative;
 
             .choose-section-beige-bg {
-                position: absolute;
-                background-color: #F0EFE9;
-                width: 100vh;
-                height: 400px;
-                bottom: 0;
-                z-index: 0;
+                display: none;
+
+                @media (min-width: 1200px) {
+                    display: block;
+                    position: absolute;
+                    background-color: #F0EFE9;
+                    width: 100vh;
+                    height: 400px;
+                    bottom: 0;
+                    z-index: -1;
+                }
             }
 
             img {
-                position: absolute;
-                z-index: 1;
-                top: 150px;
-                left: 100px;
+                display: none;
+
+                @media (min-width: 1200px) {
+                    display: block;
+                    position: absolute;
+                    top: 150px;
+                    left: 100px;
+                }
             }
         }
     }

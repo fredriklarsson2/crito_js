@@ -2,7 +2,8 @@
     
     .container {
 
-        @media (min-width: 768px) {
+
+        @media (min-width: 1200px) {
             display: flex;
             justify-content: flex-start;
             border-color: rgba(25,25,25,0.2 );
@@ -12,21 +13,19 @@
         }
 
         .section-title {
-            // padding: 25px;
-            border: 1px solid black;
+            text-align: center;
+            padding-top: 50px;
 
-            @media (min-width: 768px) {
-                // margin-top: 50px;
-                // margin-left: 75px;
+            h2 {
+                padding-bottom: 25px;
+            }
+
+            @media (min-width: 1200px) {
+                padding-left: 75px;
 
                 h2 {
                     padding-bottom: 50px;
                 }
-            }
-        
-            .btn-yellow {
-                margin-top: 40px;
-                width: 100%;
             }
         }
         
@@ -49,19 +48,15 @@
 
                 .feature-box-title {
                     display: flex;
-                    text-align: center;
 
-                    i {
-                        margin-top: 5px;
-                        margin-right: 15px;
+                    h4 {
+                        margin-left: 20px;
                     }
 
                     @media (min-width: 768px) {
                         display: block;
-                        text-align: left;
 
                         i {
-                            // padding-bottom: 25px;
                             margin-top: 0;
                             margin-right: 0;
                             font-size: 2em;
@@ -69,14 +64,11 @@
 
                         h4 {
                             padding-top: 25px;
+                            margin-left: 0;
                         }
                     }
                 }
             }
-        }
-
-        .btn-yellow {
-            width: 100%;
         }
     }
 }

@@ -1,0 +1,58 @@
+/* _confirmation-page.scss */
+
+// _confirmation-page.scss
+
+.modal-container {
+    max-width: 400px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); // Centrera horisontellt och vertikalt
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    p {
+      margin-bottom: 10px;
+    }
+
+    .close-button {
+        background-color: #F9D783;
+        color: #191919;
+        padding: 15px 25px;
+        font-weight: 600;
+        font-size: 16px;
+        border: 1px solid #F9D783;
+        border-radius: 40px;
+        transition: 0.2s ease-in-out;
+        box-shadow: 0 0 4px 0.4px rgba(105, 105, 105, 0.507);
+        cursor: pointer;
+        margin-bottom: 40px;
+    
+        &:hover {
+          background-color: #191919;
+          border: 1px solid #191919;
+          color: rgb(228, 228, 228);
+          box-shadow: 0 0 0 0;
+        }
+      }
+}
+  
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

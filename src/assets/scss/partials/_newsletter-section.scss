@@ -24,16 +24,26 @@
         }
 
         h2 {
+            text-align: center;
             font-family: 'DM Sans', sans-serif;
             font-weight: 700;
-            font-size: 45px;
+            font-size: 30px;
+            margin-bottom: 40px;
 
-            @media(max-width: 768px) {
-                text-align: center;
+            @media(min-width: 768px) {
+                text-align: left;
+                font-size: 45px;
+                margin-bottom: auto;
             }
         }
 
         form {
+            text-align: center;
+
+            @media (min-width: 768px) {
+                text-align: left;
+            }
+
             input {
                 color: #191919;
                 text-decoration: none;

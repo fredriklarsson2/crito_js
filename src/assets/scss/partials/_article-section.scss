@@ -1,52 +1,113 @@
 .article-news-section {
     .container {
         .section-title {
+
+            h6 {
+                text-align: center;
+
+                @media (min-width: 1200px) {
+                    text-align: left;
+                }
+            }
+
             .article-news-title {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding-bottom: 40px;
+                text-align: center;
+                padding-bottom: 80px;
+
+                h2 {
+                    margin-bottom: 50px;
+                }
+
+                @media (min-width: 1200px) {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    text-align: left;
+                    padding-bottom: 40px;
+
+                    h2 {
+                        margin-bottom: auto;
+                    }
+                }
             }
         }
 
         .article-boxes {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             position: relative;
-            gap: 30px;
+            
+            ul {
+                list-style-type: none;
 
-            .article-box {
-                img {
-                    width: 100%;
-                    height: auto;
+                @media (min-width: 1200px) {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    gap: 30px;
                 }
 
-                h4 {
-                    width: 280px;
-                    line-height: 36px;
+                a {
+                    pointer-events: none;
+                    text-decoration: none;
+                    
+                    :hover {
+                        h3 {
+                            text-decoration: underline;
+                        }
+
+                        img {
+                            outline: 1px solid RGBA(25,25,25,0.5 );
+                        }
+                    }
                 }
 
-                p {
-                    line-height: 28px;
-                    margin-top: 20px;
-                }
+                .article-box {
+                    margin-bottom: 50px;
 
-                .article-box-date {
-                    position: absolute;
-                    text-align: center;
-                    margin-top: -240px;
-                    margin-left: 20px;
-                    background-color: #F9D783;
-                    padding: 14px;
-                    padding-bottom: 0;
-
-                    h3 {
-                        margin-bottom: 0;
+                    @media (min-width: 768px) {
+                        margin-bottom: auto;
                     }
 
+                    h3 {
+                        display: inline-block;
+                        pointer-events: auto;
+                        color: #191919;
+                    }
+
+                    img {
+                        pointer-events: auto;
+                        height: 230px;
+                        width: 420px;
+                        object-fit: cover;
+                        object-position: center;
+                        
+                    }
+    
                     p {
-                        margin-top: 0;
+                        line-height: 28px;
+                        margin-top: 5px;
+                        max-width: 400px;
+
+                        @media (min-width: 768px) {
+                            margin-top: 20px;
+                            max-width: auto;
+                        }
+                    }
+
+                    .article-box-date {
+                        position: absolute;
+                        text-align: center;
+                        margin-top: -210px;
+                        margin-left: 20px;
+                        background-color: #F9D783;
+                        padding: 14px;
+                        padding-bottom: 0;
+    
+                        h4 {
+                            margin-bottom: 0;
+                        }
+    
+                        p {
+                            margin-top: 0;
+                        }
                     }
                 }
             }
